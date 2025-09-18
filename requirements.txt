@@ -1,0 +1,7 @@
+# Core requirements for order-matching-engine
+
+numpy
+pandas
+pytest
+flake8
+black

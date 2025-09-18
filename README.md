@@ -44,12 +44,14 @@ order-matching-engine/
 	git clone https://github.com/git-abdoul/order-matching-engine.git
 	cd order-matching-engine
 	```
-2. **Install dependencies:**
+2. **Set up a Python environment and install dependencies:**
 	```sh
 	python3 -m venv venv
 	source venv/bin/activate
+	pip install --upgrade pip
 	pip install -r requirements.txt
 	```
+	This will install all required libraries: numpy, pandas, pytest, flake8, black.
 3. **Run the engine:**
 	```sh
 	python scripts/run_engine.py
