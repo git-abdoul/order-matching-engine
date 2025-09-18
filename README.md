@@ -13,6 +13,7 @@ A Python application for simulating real-time order matching and slippage analys
 ```
 order-matching-engine/
 ├── README.md
+├── requirements.txt  # All runtime & dev dependencies
 ├── intraday_trade_matching.md
 ├── engine/           # Core matching engine logic
 │   ├── __init__.py
@@ -20,7 +21,7 @@ order-matching-engine/
 ├── tests/            # Unit and integration tests
 │   └── test_matcher.py
 └── scripts/          # CLI and utility scripts
-	 └── run_engine.py
+	└── run_engine.py
 ```
 
 ---
@@ -66,11 +67,11 @@ order-matching-engine/
 	python3 -m venv venv
 	source venv/bin/activate
 	```
-2. **Install development dependencies:**
+2. **Install all dependencies (runtime & dev):**
 	```sh
 	pip install -r requirements.txt
-	pip install -r dev-requirements.txt  # For testing, linting
 	```
+	This single requirements file includes all libraries for running, testing, and linting the app.
 3. **Run tests:**
 	```sh
 	pytest tests/
